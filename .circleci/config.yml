@@ -1,0 +1,23 @@
+version: 2.1
+
+orbs:
+  fastlane: fastlane/fastlane@1.6.2
+
+jobs:
+  build:
+    macos:
+      xcode: "12.5.0"
+    steps:
+      - checkout
+      - run:
+          name: Install Fastlane
+          command: bundle install
+      - run:
+          name: Fastlane Test
+          command: bundle exec fastlane test
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
