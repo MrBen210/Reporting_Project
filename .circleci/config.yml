@@ -1,7 +1,7 @@
 version: 2.1
 
-orbs:
-  fastlane: fastlane/fastlane@1.6.2
+oorbs:
+  fastlane: fastlane/fastlane@2.214.0
 
 jobs:
   build:
