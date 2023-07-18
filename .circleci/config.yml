@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  fastlane: fastlane/fastlane@2.193.0
+  fastlane: circleci/ios@12.5.0
 
 jobs:
   build:

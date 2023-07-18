@@ -1,0 +1,13 @@
+2023-07-18 21:20:31 info: tempDirectory:/Users/pedriito/.vscode/extensions/embold-vscode.embold-0.1.5/temp
+2023-07-18 21:20:31 info: Extraction complete for source: /Users/pedriito/.vscode/extensions/embold-vscode.embold-0.1.5/resources/embold-scanner-archive.zip, destination: /Users/pedriito/.vscode/extensions/embold-vscode.embold-0.1.5/temp
+2023-07-18 21:20:31 info: Congratulations, your extension "Embold" is now active!
+2023-07-18 21:20:31 info: file:///Users/pedriito/Documents/GitHub/Reporting_Project/.git/objects/maintenance.lock
+2023-07-18 21:20:31 error: SQLITE_ERROR: no such table: issues
+2023-07-18 21:24:42 info: file:///Users/pedriito/Documents/GitHub/Reporting_Project/.git/objects/maintenance.lock
+2023-07-18 21:24:42 error: SQLITE_ERROR: no such table: issues
+2023-07-18 21:25:13 info: file:///Users/pedriito/Documents/GitHub/Reporting_Project/.git/.gitstatus.RpMePg
+2023-07-18 21:25:13 error: SQLITE_ERROR: no such table: issues
+2023-07-18 21:27:51 info: file:///Users/pedriito/Documents/GitHub/Reporting_Project/.git/objects/maintenance.lock
+2023-07-18 21:27:51 error: SQLITE_ERROR: no such table: issues
+2023-07-18 21:31:08 info: file:///Users/pedriito/Documents/GitHub/Reporting_Project/.git/objects/maintenance.lock
+2023-07-18 21:31:08 error: SQLITE_ERROR: no such table: issues
