@@ -25,9 +25,12 @@ final class projet_analytics_juinUITests: XCTestCase {
     func testExample() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
+        XCUIDevice.shared.orientation = .landscapeRight
+        setupSnapshot(app)
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        snapshot("01LoginScreen")
+        app.buttons["Login"].tap()
+        snapshot("02HomeScreen")
     }
 
     func testLaunchPerformance() throws {
