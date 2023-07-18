@@ -34,7 +34,7 @@ jobs:
           path: output
 
 workflows:
-  build-test-adhoc:
+  test_fastlane:
     jobs:
       - build-and-test
       - adhoc:
