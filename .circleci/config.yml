@@ -6,7 +6,7 @@ jobs:
       xcode: 14.0.1
     environment:
       FL_OUTPUT_DIR: output
-      FASTLANE_LANE: test
+      FASTLANE_LANE: screenshots
     steps:
       - checkout
       - run: bundle install
