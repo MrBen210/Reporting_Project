@@ -16,10 +16,10 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             
-            TextField("Email", text: $authenticationVM.email)
+            TextField("Email", text: $authenticationVM.email )
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-            
+                
             SecureField("Password", text: $authenticationVM.password)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()

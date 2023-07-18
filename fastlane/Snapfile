@@ -22,7 +22,7 @@
 # ])
 
 # The name of the scheme which contains the UI Tests
- scheme("projet_analytics_juin")
+ scheme("projet_analytics_juinUITests")
 
 # Where should the resulting screenshots be stored?
  output_directory("./screenshots")

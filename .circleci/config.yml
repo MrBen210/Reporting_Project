@@ -37,7 +37,7 @@ workflows:
   test_fastlane:
     jobs:
       - build-and-test
-      - adhoc:
+      - adhoc:  
           filters:
             branches:
               only: development
