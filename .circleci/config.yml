@@ -1,5 +1,7 @@
-# .circleci/config.yml
 version: 2.1
+orbs:
+  discord: antonioned/discord@0.1.0
+
 jobs:
   build-and-test:
     macos:
@@ -16,10 +18,22 @@ jobs:
       - store_artifacts:
           path: output
       - store_test_results:
-          path: output/scan  
+          path: output/scan
+
+  discord-job:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - discord/status:
+          webhook: https://discord.com/api/webhooks/1131032946900475974/ZuG6jmyxzGbz_t9XMjbhdEQitIAaoFNri31TZdkciA4fy8WdTqlk3SGy9jjDsywcLru5
+          success_message: build réussi
+          failure_message: build échoué
+          success_only: false
 
 workflows:
   test_fastlane:
     jobs:
       - build-and-test:
           context: fastlane
+      - discord-job:
+          context: org-global
