@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F054B3C2A675D9200FC7C6C /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F054B3B2A675D9200FC7C6C /* SnapshotHelper.swift */; };
 		A05CBE472A4C834900B1E80E /* AuthentificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05CBE462A4C834900B1E80E /* AuthentificationViewModel.swift */; };
 		A05CBE492A4C851700B1E80E /* ConnectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05CBE482A4C851600B1E80E /* ConnectedView.swift */; };
 		A05CBE4C2A4C987900B1E80E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A05CBE4B2A4C987900B1E80E /* FirebaseAnalytics */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F054B3B2A675D9200FC7C6C /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		A05CBE462A4C834900B1E80E /* AuthentificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationViewModel.swift; sourceTree = "<group>"; };
 		A05CBE482A4C851600B1E80E /* ConnectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedView.swift; sourceTree = "<group>"; };
 		A0E9E0232A2A4B4B004957D8 /* projet_analytics_juin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projet_analytics_juin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,7 @@
 		A0E9E0402A2A4B4C004957D8 /* projet_analytics_juinUITests */ = {
 			isa = PBXGroup;
 			children = (
+				2F054B3B2A675D9200FC7C6C /* SnapshotHelper.swift */,
 				A0E9E0412A2A4B4C004957D8 /* projet_analytics_juinUITests.swift */,
 				A0E9E0432A2A4B4C004957D8 /* projet_analytics_juinUITestsLaunchTests.swift */,
 			);
@@ -305,6 +308,7 @@
 			files = (
 				A0E9E0422A2A4B4C004957D8 /* projet_analytics_juinUITests.swift in Sources */,
 				A0E9E0442A2A4B4C004957D8 /* projet_analytics_juinUITestsLaunchTests.swift in Sources */,
+				2F054B3C2A675D9200FC7C6C /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +458,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,6 +488,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
