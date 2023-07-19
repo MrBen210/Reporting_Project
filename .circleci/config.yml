@@ -13,44 +13,13 @@ jobs:
       - run:
           name: Fastlane
           command: bundle exec fastlane $FASTLANE_LANE
-      - notify:
-          on_success:
-            type: email
-            to: pelie.romer@gmail.com
-            subject: fastlane success 
-            body:  The build and test passed
-          on_failure:
-            type: email
-            to: pelie.romer@gmail.com
-            subject: fastlane failure
-            body: The build and test failed
       - store_artifacts:
           path: output
       - store_test_results:
-          path: output/scan
-
-  adhoc:
-    macos:
-      xcode: 14.0.1
-    environment:
-      FL_OUTPUT_DIR: output
-      FASTLANE_LANE: adhoc
-    steps:
-      - checkout
-      - run: bundle install
-      - run:
-          name: Fastlane
-          command: bundle exec fastlane $FASTLANE_LANE
-      - store_artifacts:
-          path: output
+          path: output/scan  
 
 workflows:
   test_fastlane:
     jobs:
-      - build-and-test
-      - adhoc:  
-          filters:
-            branches:
-              only: development
-          requires:
-            - build-and-test
+      - build-and-test:
+          context: fastlane

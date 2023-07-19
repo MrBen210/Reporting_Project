@@ -28,20 +28,19 @@ final class projet_analytics: XCTestCase {
         XCUIDevice.shared.orientation = .landscapeLeft
         setupSnapshot(app)
         app.launch()
-        snapshot("01ContentView")
+        snapshot("1-ContentView")
         let emailTextField = app.textFields["Email"]
         emailTextField.typeText("teste@test.com")
-        emailTextField.tap()
         let passwordSecureTextField = app.secureTextFields["Password"]
         passwordSecureTextField.typeText("Test132@")
-        passwordSecureTextField.tap()
-        snapshot("02ConnectedView")
+        app.buttons["Sign In"].tap()
+        snapshot("2-ConnectedView")
         app.buttons["Click"].tap()
-        snapshot("03ConnectedView")
+        snapshot("3-ConnectedView")
+        app.buttons["Click"].tap()
+        snapshot("4-ConnectedView")
     }
-    
-    
-    
+
     
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
